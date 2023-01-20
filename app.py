@@ -1,4 +1,3 @@
-
 from fastapi import Depends, FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from starlette.responses import JSONResponse
@@ -32,9 +31,15 @@ def submitData(pass_: schemas.Pass, user: schemas.User, level: schemas.Level, im
     crud.CreatePass.create_images(db=db, image=image)
     crud.CreatePass.create_coordinate(db=db, coordinate=coordinate)
     new_pass = crud.CreatePass.create_pass(db=db, pass_=pass_)
-    return JSONResponse({"status": 200, "message": "Отправлено успешно", "id": new_pass.id})
+    return JSONResponse({"status": 200, "message": "New pass is created", "id": new_pass.id})
 
 
+@api.exception_handler(RequestValidationError)
+async def validation_exception_handler(request, exc):
+    return JSONResponse({"status": 422, "message": str(exc)[:200], "id": "None"}, status_code=422)
 
 
+@api.exception_handler(Exception)
+async def exception_callback(request: Request, exc: Exception):
+    return JSONResponse({"status": 500, "message": str(exc)[:200], "id": "None"}, status_code=500)
 
