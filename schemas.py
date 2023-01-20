@@ -1,5 +1,6 @@
 from pydantic import BaseModel, validator, constr
 from datetime import datetime
+from typing import Type, Any
 
 
 class BaseException(Exception):
@@ -14,9 +15,15 @@ class User(BaseModel):
     email: str
 
     @validator('email')
-    def validate_email(cls, value):
-        if "@" and "." not in value:
+    def validate_email(cls: Type['User'], value: str) -> str:
+        if not all(char in value for char in ['@', '.']):
             raise BaseException('The email is wrong')
+        return value
+
+    @validator('phone')
+    def validate_phone(cls: Type['User'], value: str) -> str:
+        if not all(digit.isdigit() for digit in value):
+            raise BaseException('The phone number is wrong')
         return value
 
 
@@ -49,11 +56,6 @@ class Pass(BaseModel):
     other_titles: str = None
     connect: str = None
     status: str = "New"
-    #user_id: User
-    #coordinates: Coordinate
-    #levels: Level
-    #images: List[Image] = None
-    #activities: List[PerevalActivities] = None
 
     class Config:
         orm_mode = True
