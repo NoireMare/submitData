@@ -8,7 +8,7 @@ class Pass(Base):
     __tablename__ = "passes"
 
     id = Column(Integer, primary_key=True, index=True)
-    add_time = Column(DateTime, default=datetime.now())
+    add_time = Column(DateTime, default=datetime.utcnow())
     beauty_title = Column(String(25), nullable=False)
     title = Column(String(25), unique=True, index=True, nullable=False)
     other_titles = Column(String(25), unique=True)
@@ -32,7 +32,7 @@ class User(Base):
     name = Column(String(25), nullable=False, index=True)
     otc = Column(String(25))
     phone = Column(String(12))
-    email = Column(String(25), unique=True, index=True, nullable=False)
+    email = Column(String(25), index=True, nullable=False)
     passes = relationship('Pass', back_populates="pass_creator",
                           cascade='save-update, merge, delete',
                           passive_deletes=True
@@ -75,7 +75,7 @@ class Image(Base):
     title_2 = Column(String(25), default="")
     image_2 = Column(String, nullable=False)
     title_3 = Column(String(25), default="")
-    image_3 = Column(String)
+    image_3 = Column(String, default="")
     images = relationship('Pass', back_populates="pass_images",
                           cascade='save-update, merge, delete',
                           passive_deletes=True
