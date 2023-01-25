@@ -55,7 +55,7 @@ class PassScheme(BaseModel):
     title: str
     other_titles: str = None
     connect: str = None
-    status: str = "New"
+    status: str = "new"
 
     class Config:
         orm_mode = True
