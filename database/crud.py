@@ -18,7 +18,7 @@ class PassCrud:
         self.session = session
 
     def get_last_id(self, model) -> int:
-        return self.session.query(model).order_by(model.id)[-1].id
+        return self.session.query(model).order_by(model.id.desc()).first().id
 
     def create_user(self, user):
         new_user = User(**user.dict())
