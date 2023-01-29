@@ -46,11 +46,16 @@ List of features:
 
 
 ## Screenshots
-![FAST API list](./img/screenshot1.png)
-![POST request](./img/screenshot2.png)
-![GET by id request](./img/screenshot3.png)
-![GET by email request](./img/screenshot4.png)
-![PATCH request](./img/screenshot5.png)
+FAST API list
+![FAST API list](./img/screenshot5.png)
+POST create pass request
+![POST request](./img/screenshot1.png)
+GET pass info by its id
+![GET by id request](./img/screenshot2.png)
+GET info about passes added by concrete user
+![GET by email request](./img/screenshot3.png)
+PATCH change an info regarding the pass
+![PATCH request](./img/screenshot4.png)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
