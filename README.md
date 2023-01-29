@@ -1,4 +1,4 @@
-# Project Name
+# Passes-app
 Simple REST API project. It is a part of a mobile app for hikers. It can be used to add an information about a new pass in the big database for hike lovers. 
 
 Live demo: https://passes-app.herokuapp.com/docs
