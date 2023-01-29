@@ -1,5 +1,5 @@
 # Passes-app
-Simple REST API project. It is a part of a mobile app for hikers. It can be used to add an information about a new pass in the big database for hike lovers. 
+Simple REST API project. It is a part of a mobile app for hikers. It can be used to add an information about a new pass to the big database for hike lovers. 
 
 Live demo: https://passes-app.herokuapp.com/docs
 <!-- If you have the project hosted somewhere, include the link here. -->
