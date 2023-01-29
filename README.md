@@ -1,6 +1,7 @@
 # Project Name
-Simple REST API. A part of mobile app for hikers. 
-Live demo [_here_]: (https://passes-app.herokuapp.com/docs)
+Simple REST API project. It is a part of a mobile app for hikers. It can be used to add an information about a new pass in the big database for hike lovers. 
+
+Live demo: https://passes-app.herokuapp.com/docs
 <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -18,31 +19,30 @@ Live demo [_here_]: (https://passes-app.herokuapp.com/docs)
 
 
 ## General Information
-What can this app do? It adds an information about a new pass (info is provided by any hiker) to the database. Name of the pass, its coordinates, images
-and level of difficulty. You can change an information about passes in the database or get them by id. You can also check which passes were added 
-by concrete user (using his or her email).
+What can this app do? It adds an information about a new pass to the database. All the information is provided by any hiker that would like to share. 
+Name of the pass, its coordinates, images and level of difficulty - everything counts. It is also possible to change an information about passes in the database or get this info by id. You can also check which passes were added by concrete user (providing his or her email).
 
 This project is a part of my Python and REST API studies.  
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-fastapi=0.89.1
-uvicorn=0.20.0
-sqlalchemy=1.4.46
-pydantic[email]=1.10.4
-python-dotenv=0.21.0
-psycopg2-binary=2.9.5
-gunicorn=20.1.0
+- fastapi=0.89.1
+- uvicorn=0.20.0
+- sqlalchemy=1.4.46
+- pydantic[email]=1.10.4
+- python-dotenv=0.21.0
+- psycopg2-binary=2.9.5
+- gunicorn=20.1.0
 
-Python=3.11
+- Python=3.11
 
 ## Features
 List of features:
 - Add a new pass to the database (post)
 - Get an info about the pass by its id (get)
-- Get an info about passes which were added by a concrete user using his or her email (get)
-- Change an info about concrete pass (patch)
+- Get an info about all the passes which were added by concrete user using his or her email (get)
+- Change an info regarding selected pass (patch)
 
 
 ## Screenshots
@@ -56,17 +56,17 @@ List of features:
 
 
 ## Setup
-1. Use requirements.txt file to setup dependencies.
+1. Use requirements.txt file to install dependencies.
 2. Please provide an information about your database here: database/database.py --> SQLALCHEMY_DATABASE_URL = "" .
 3. Use .env file for all important configs. 
-4. Start API by command "uvicorn main:app --reload" in your local environment. 
+4. Start API in your local environment by entering the command "uvicorn main:app --reload". 
 5. Open "127.0.0.1/docs" page to start using API.
 
 ## Usage
-Use 'Submitdata' request to add a new pass to the database.
-Use 'Get Pass Info' request to get an info about the pass by its id.
-Use 'Get Passes By User Email' request to get an info about passes which were added by a concrete user (using his or her email).
-Use 'Change Pass Info' request to change an info about the pass by its id.
+- Use 'Submitdata' request to add a new pass to the database.
+- Use 'Get Pass Info' request to get an info about the pass by its id.
+- Use 'Get Passes By User Email' request to get an info about passes which were added by concrete user (using his or her email).
+- Use 'Change Pass Info' request to change an information about the pass by its id.
 
 
 ## Project Status
@@ -74,10 +74,6 @@ Project is: _no longer being worked on_.
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-
-Room for improvement:
 There are too many :)
 
 
