@@ -20,7 +20,7 @@ Live demo: https://passes-app.herokuapp.com/docs
 
 ## General Information
 What can this app do? It adds an information about a new pass to the database. All the information is provided by any hiker that would like to share. 
-Name of the pass, its coordinates, images and level of difficulty - everything counts. It is also possible to change an information about passes in the database or get this info by id. You can also check which passes were added by concrete user (providing his or her email).
+Name of the pass, its coordinates, images and level of difficulty - everything counts. It is also possible to change an information about passes in the database or get all the information regarding the selected pass by its id. You can also check which passes were added by concrete user (providing his or her email).
 
 This project is a part of my Python and REST API studies.  
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
@@ -60,7 +60,7 @@ List of features:
 2. Please provide an information about your database here: database/database.py --> SQLALCHEMY_DATABASE_URL = "" .
 3. Use .env file for all important configs. 
 4. Start API in your local environment by entering the command "uvicorn main:app --reload". 
-5. Open "127.0.0.1/docs" page to start using API.
+5. Open "127.0.0.1/docs" page to enter Swagger.
 
 ## Usage
 - Use 'Submitdata' request to add a new pass to the database.
