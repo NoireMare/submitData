@@ -59,13 +59,13 @@ class PassCrud:
         return {'pass_': {'id': pass_.id, 'add_time': pass_.add_time, 'beauty_title': pass_.beauty_title,
                          'title': pass_.title, 'other_titles': pass_.other_titles, 'connect': pass_.connect,
                          'status': pass_.status},
-                'coordinates': {'height': pass_.pass_coordinates.height, 'latitude': pass_.pass_coordinates.latitude,
+                'coordinate': {'height': pass_.pass_coordinates.height, 'latitude': pass_.pass_coordinates.latitude,
                                 'longitude': pass_.pass_coordinates.longitude
                                 },
                 'level': {'winter': pass_.pass_levels.winter, 'summer': pass_.pass_levels.summer,
                           'autumn': pass_.pass_levels.autumn, 'spring': pass_.pass_levels.spring
                           },
-                'images': {'title_1': pass_.pass_images.title_1, 'title_2': pass_.pass_images.title_2,
+                'image': {'title_1': pass_.pass_images.title_1, 'title_2': pass_.pass_images.title_2,
                            'title_3': pass_.pass_images.title_3, 'image_1': pass_.pass_images.image_1,
                            'image_2': pass_.pass_images.image_2, 'image_3': pass_.pass_images.image_3
                            },
