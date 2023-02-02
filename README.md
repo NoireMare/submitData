@@ -20,7 +20,7 @@ Live demo: https://passes-app.herokuapp.com/docs
 
 ## General Information
 What can this app do? It adds an information about a new pass to the database. All the information is provided by any hiker that would like to share. 
-Name of the pass, its coordinates, images and level of difficulty - everything counts. It is also possible to change an information about passes in the database or get all the information regarding the selected pass by its id. You can also check which passes were added by concrete user (providing his or her email).
+Name of the pass, its coordinates, images and level of difficulty - everything counts. It is also possible to change the information about passes in the database or get all the information regarding a selected pass by its id. You can also check which passes were added by a concrete user (providing his or her email).
 
 This project is a part of my Python and REST API studies.  
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
@@ -41,8 +41,8 @@ This project is a part of my Python and REST API studies.
 List of features:
 - Add a new pass to the database (post)
 - Get an info about the pass by its id (get)
-- Get an info about all the passes which were added by concrete user using his or her email (get)
-- Change an info regarding selected pass (patch)
+- Get an info about all the passes which were added a by concrete user using his or her email (get)
+- Change an info regarding a selected pass (patch)
 
 
 ## Screenshots
@@ -63,15 +63,15 @@ PATCH change an info regarding the pass
 ## Setup
 1. Use requirements.txt file to install dependencies.
 2. Please provide an information about your database here: database/database.py --> SQLALCHEMY_DATABASE_URL = "" .
-3. Use .env file for all important configs. 
+3. Use .env file for storing all of your important configs. 
 4. Start API in your local environment by entering the command "uvicorn main:app --reload". 
-5. Open "127.0.0.1/docs" page to enter Swagger.
+5. Open "127.0.0.1/docs" page to enter the Swagger.
 
 ## Usage
 - Use 'Submitdata' request to add a new pass to the database.
 - Use 'Get Pass Info' request to get an info about the pass by its id.
-- Use 'Get Passes By User Email' request to get an info about passes which were added by concrete user (using his or her email).
-- Use 'Change Pass Info' request to change an information about the pass by its id.
+- Use 'Get Passes By User Email' request to get an info about passes which were added by a concrete user (using his or her email).
+- Use 'Change Pass Info' request to change an information about the pass.
 
 
 ## Project Status
