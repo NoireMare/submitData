@@ -41,20 +41,20 @@ This project is a part of my Python and REST API studies.
 List of features:
 - Add a new pass to the database (post)
 - Get an info about the pass by its id (get)
-- Get an info about all the passes which were added a by concrete user using his or her email (get)
+- Get an info about all the passes which were added by a concrete user using his or her email (get)
 - Change an info regarding a selected pass (patch)
 
 
 ## Screenshots
 FAST API list
 ![FAST API list](./img/screenshot5.png)
-POST create pass request
+POST, create pass request
 ![POST request](./img/screenshot1.png)
-GET pass info by its id
+GET, pass info by its id
 ![GET by id request](./img/screenshot2.png)
-GET info about passes added by concrete user
+GET, info about passes added by a concrete user
 ![GET by email request](./img/screenshot3.png)
-PATCH change an info regarding the pass
+PATCH, change an info regarding the pass
 ![PATCH request](./img/screenshot4.png)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
